@@ -1,0 +1,5 @@
+package require autopsf
+autopsf -mol 0
+solvate $$THIS_PATH/$$NAME_autopsf.psf $$THIS_PATH/$$NAME_autopsf.pdb -o $$NAME_solvated -s WT -rotate -rotsel { all } -rotinc 10 -x 10 -y 10 -z 10 +x 10 +y 10 +z 10 -b 2.4
+autoionize -psf $$THIS_PATH/$$NAME_solvated.psf -pdb $$THIS_PATH/$$NAME_solvated.pdb -o $$NAME_ionized -neutralize
+exit

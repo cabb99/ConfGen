@@ -1,0 +1,5 @@
+package require autopsf
+autopsf -mol 0
+solvate /home/lammps/Documentos/NAMD/bin/Test/pep5/pep5_autopsf.psf /home/lammps/Documentos/NAMD/bin/Test/pep5/pep5_autopsf.pdb -o pep5_solvated -s WT -rotate -rotsel { all } -rotinc 10 -x 10 -y 10 -z 10 +x 10 +y 10 +z 10 -b 2.4
+autoionize -psf /home/lammps/Documentos/NAMD/bin/Test/pep5/pep5_solvated.psf -pdb /home/lammps/Documentos/NAMD/bin/Test/pep5/pep5_solvated.pdb -o pep5_ionized -neutralize
+exit

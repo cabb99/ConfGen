@@ -1,0 +1,6 @@
+set all [atomselect top all]
+set fix [atomselect top protein]
+$all set beta 0
+$fix set beta 1
+$all writepdb autofix.pdb
+exit

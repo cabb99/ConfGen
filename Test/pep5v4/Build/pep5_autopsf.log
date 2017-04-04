@@ -1,0 +1,41 @@
+#Original PDB file: 
+#PDBSTART
+CRYST1    0.000    0.000    0.000  90.00  90.00  90.00 P 1           1
+ATOM      1  N   GLY A   1       0.379  26.200  29.310  1.00 18.04           N
+ATOM      2  CA  GLY A   1       1.466  26.241  30.335  1.00 17.90           C
+ATOM      3  C   GLY A   1       2.828  26.067  29.680  1.00 16.78           C
+ATOM      4  O   GLY A   1       2.937  26.089  28.462  1.00 17.02           O
+ATOM      5  N   SER A   2       3.862  25.906  30.490  1.00 16.03           N
+ATOM      6  CA  SER A   2       5.226  25.721  29.986  1.00 15.38           C
+ATOM      7  C   SER A   2       5.537  24.251  29.757  1.00 14.58           C
+ATOM      8  O   SER A   2       4.932  23.385  30.393  1.00 14.20           O
+ATOM      9  CB  SER A   2       6.213  26.341  30.966  1.00 15.65           C
+ATOM     10  OG  SER A   2       5.841  27.682  31.194  1.00 16.01           O
+ATOM     11  N   HIS A   3       6.473  23.972  28.849  1.00 13.43           N
+ATOM     12  CA  HIS A   3       6.782  22.601  28.442  1.00 12.59           C
+ATOM     13  C   HIS A   3       8.254  22.352  28.133  1.00 11.97           C
+ATOM     14  O   HIS A   3       9.025  23.286  27.987  1.00 10.93           O
+ATOM     15  CB  HIS A   3       5.960  22.223  27.209  1.00 12.88           C
+ATOM     16  CG  HIS A   3       4.485  22.303  27.436  1.00 12.79           C
+ATOM     17  ND1 HIS A   3       3.785  21.325  28.109  1.00 11.62           N
+ATOM     18  CD2 HIS A   3       3.581  23.249  27.091  1.00 13.11           C
+ATOM     19  CE1 HIS A   3       2.506  21.666  28.168  1.00 13.56           C
+ATOM     20  NE2 HIS A   3       2.358  22.834  27.564  1.00 12.41           N
+ATOM     21  N   SER A   4       8.611  21.081  27.974  1.00 11.76           N
+ATOM     22  CA  SER A   4       9.993  20.719  27.723  1.00 12.14           C
+ATOM     23  C   SER A   4      10.176  19.425  26.937  1.00 11.53           C
+ATOM     24  O   SER A   4       9.365  18.512  26.988  1.00 11.91           O
+ATOM     25  CB  SER A   4      10.749  20.609  29.054  1.00 12.17           C
+ATOM     26  OG  SER A   4      10.422  19.399  29.697  1.00 13.04           O
+ATOM     27  N   MET A   5      11.261  19.356  26.198  1.00 10.48           N
+ATOM     28  CA  MET A   5      11.588  18.147  25.486  1.00 10.60           C
+ATOM     29  C   MET A   5      12.990  17.843  25.963  1.00 10.64           C
+ATOM     30  O   MET A   5      13.825  18.749  26.033  1.00  9.45           O
+ATOM     31  CB  MET A   5      11.542  18.349  23.962  1.00  9.53           C
+ATOM     32  CG  MET A   5      11.903  17.044  23.192  1.00 12.08           C
+ATOM     33  SD  MET A   5      11.594  17.001  21.430  1.00  9.89           S
+ATOM     34  CE  MET A   5      13.011  18.001  20.839  1.00 11.82           C
+END
+
+#PDBEND
+#Creating chain P1: 5 residues from indices 1 to 34 in original file. Patches: Nter GLYP, Cter CTER

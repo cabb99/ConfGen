@@ -1,0 +1,6 @@
+set all [atomselect top all]
+set res  [atomselect top "segname P1 and name CA"]
+$all set beta 0
+$res set beta 1
+$all writepdb restraint.pdb
+exit

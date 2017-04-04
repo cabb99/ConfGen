@@ -1,0 +1,37 @@
+Info) VMD for LINUXAMD64, version 1.9.1 (February 1, 2012)
+Info) http://www.ks.uiuc.edu/Research/vmd/                         
+Info) Email questions and bug reports to vmd@ks.uiuc.edu           
+Info) Please include this reference in published work using VMD:   
+Info)    Humphrey, W., Dalke, A. and Schulten, K., `VMD - Visual   
+Info)    Molecular Dynamics', J. Molec. Graphics 1996, 14.1, 33-38.
+Info) -------------------------------------------------------------
+Info) Multithreading available, 8 CPUs detected.
+Info) Free system memory: 14294MB (79%)
+Info) Creating CUDA device pool and initializing hardware...
+Info) Detected 3 available CUDA accelerators:
+Info) [0] GeForce GTX 285    30 SM_1.3 @ 1.48 GHz, 1.0GB RAM, KTO, OIO, ZCP
+Info) [1] GeForce GTX 285    30 SM_1.3 @ 1.48 GHz, 1.0GB RAM, OIO, ZCP
+Info) [2] GeForce GTX 285    30 SM_1.3 @ 1.48 GHz, 1.0GB RAM, OIO, ZCP
+Info) Dynamically loaded 2 plugins in directory:
+Info) /usr/local/lib/vmd/plugins/LINUXAMD64/molfile
+Info) File loading in progress, please wait.
+psfplugin) Detected a Charmm31 PSF file
+Info) Using plugin psf for structure file pep5v2_ionized.psf
+Info) Analyzing structure ...
+Info)    Atoms: 2739
+Info)    Bonds: 1848
+Info)    Angles: 1006  Dihedrals: 158  Impropers: 15  Cross-terms: 3
+Info)    Bondtypes: 0  Angletypes: 0  Dihedraltypes: 0  Impropertypes: 0
+Info)    Residues: 896
+Info)    Waters: 891
+Info)    Segments: 2
+Info)    Fragments: 892   Protein: 1   Nucleic: 0
+Info) Using plugin pdb for coordinates from file pep5v2_ionized.pdb
+Info) Finished with coordinate file pep5v2_ionized.pdb.
+atomselect0
+atomselect1
+Info) Opened coordinate file autofix.pdb for writing.
+Info) Finished with coordinate file autofix.pdb.
+Info) VMD for LINUXAMD64, version 1.9.1 (February 1, 2012)
+Info) Exiting normally.
+vmd > 

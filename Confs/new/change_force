@@ -1,0 +1,8 @@
+cambiar los constraints ligeramentev
+
+#protocol 
+for {set i 0} {$i <= 6} {incr i 1} { 
+        set ck [expr {3 - $i*0.5}] 
+        constraintScaling $ck 
+run 25000 
+} 

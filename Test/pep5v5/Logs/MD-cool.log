@@ -1,0 +1,50 @@
+Converse/Charm++ Commit ID: v6.4.0-beta1-0-g5776d21
+Charm++> scheduler running in netpoll mode.
+CharmLB> Load balancer assumes all CPUs are same.
+Charm++> Running on 1 unique compute nodes (8-way SMP).
+Charm++> cpu topology info is gathered in 0.002 seconds.
+Info: NAMD 2.9 for Linux-x86_64
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60400 for net-linux-x86_64-iccstatic
+Info: Built Mon Apr 30 14:00:48 CDT 2012 by jim on nereid.ks.uiuc.edu
+Info: 1 NAMD  2.9  Linux-x86_64  8    Pascal  eduardo
+Info: Running on 8 processors, 8 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.00570297 s
+Info: 1.64366 MB of memory in use based on CmiMemoryUsage
+Info: Configuration file is Data/MD-cool.conf
+Info: Changed directory to Data
+TCL: Suspending until startup complete.
+Warning: The following variables were set in the
+Warning: configuration file but will be ignored:
+Warning:    langevinTemp (Langevin)
+Warning:    langevinDamping (Langevin)
+Warning:    langevinHydrogen (Langevin)
+Info: EXTENDED SYSTEM FILE   MD-ntv.xsc
+FATAL ERROR: Unable to open extended system file.
+
+[0] Stack Traceback:
+  [0:0] CmiAbort+0x7b  [0xcbb3b5]
+  [0:1] _Z8NAMD_diePKc+0x62  [0x581dce]
+  [0:2] _ZN13SimParameters12check_configER12ParseOptionsP10ConfigListRPc+0x48a4  [0xb5350e]
+  [0:3] _ZN13SimParameters22initialize_config_dataEP10ConfigListRPc+0x88  [0xb5e4cc]
+  [0:4] _ZN9NamdState14configListInitEP10ConfigList+0x3bc  [0xaa7a50]
+  [0:5] _ZN9ScriptTcl9initcheckEv+0x66  [0xb342a8]
+  [0:6] _ZN9ScriptTcl7Tcl_runEPvP10Tcl_InterpiPPc+0x1d  [0xb300c3]
+  [0:7] TclInvokeStringCommand+0x88  [0xcf1158]
+  [0:8]   [0xcf3d77]
+  [0:9]   [0xcf5192]
+  [0:10] Tcl_EvalEx+0x16  [0xcf59b6]
+  [0:11] Tcl_FSEvalFileEx+0x151  [0xd57b61]
+  [0:12] Tcl_EvalFile+0x2e  [0xd57d1e]
+  [0:13] _ZN9ScriptTcl4loadEPc+0x10  [0xb2f432]
+  [0:14] _Z18after_backend_initiPPc+0x448  [0x586530]
+  [0:15] main+0x3a  [0x5860b2]
+  [0:16] __libc_start_main+0xed  [0x7f0f5cb4876d]
+  [0:17] _ZNSt8ios_base4InitD1Ev+0x4a  [0x54112a]

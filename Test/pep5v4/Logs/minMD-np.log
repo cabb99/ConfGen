@@ -1,0 +1,393 @@
+Charm++> scheduler running in netpoll mode.
+Charm++> Running on 1 unique compute nodes (8-way SMP).
+Charm++> cpu topology info is gathered in 0.001 seconds.
+Info: NAMD 2.8b3 for Linux-x86_64-CUDA
+Info: 
+Info: Please visit http://www.ks.uiuc.edu/Research/namd/
+Info: for updates, documentation, and support information.
+Info: 
+Info: Please cite Phillips et al., J. Comp. Chem. 26:1781-1802 (2005)
+Info: in all publications reporting results obtained with NAMD.
+Info: 
+Info: Based on Charm++/Converse 60303 for net-linux-x86_64-iccstatic
+Info: Built Thu May 19 12:10:24 CDT 2011 by jim on larissa.ks.uiuc.edu
+Info: 1 NAMD  2.8b3  Linux-x86_64-CUDA  4    lammps-EX58-UD5  lammps
+Info: Running on 4 processors, 4 nodes, 1 physical nodes.
+Info: CPU topology information available.
+Info: Charm++/Converse parallel runtime startup completed at 0.00258708 s
+Pe 0 sharing CUDA device 1 first 0 next 2
+Pe 0 physical rank 0 binding to CUDA device 1 on lammps-EX58-UD5: 'GeForce GTX 285'  Mem: 1023MB  Rev: 1.3
+Pe 1 sharing CUDA device 2 first 1 next 3
+Pe 1 physical rank 1 binding to CUDA device 2 on lammps-EX58-UD5: 'GeForce GTX 285'  Mem: 1023MB  Rev: 1.3
+Pe 3 sharing CUDA device 2 first 1 next 1
+Pe 2 sharing CUDA device 1 first 0 next 0
+Pe 3 physical rank 3 binding to CUDA device 2 on lammps-EX58-UD5: 'GeForce GTX 285'  Mem: 1023MB  Rev: 1.3
+Pe 2 physical rank 2 binding to CUDA device 1 on lammps-EX58-UD5: 'GeForce GTX 285'  Mem: 1023MB  Rev: 1.3
+Info: 1.64024 MB of memory in use based on CmiMemoryUsage
+Info: Configuration file is Data/minMD-np.conf
+Info: Changed directory to Data
+TCL: Suspending until startup complete.
+Info: EXTENDED SYSTEM FILE   min-np.xsc
+Info: SIMULATION PARAMETERS:
+Info: TIMESTEP               1
+Info: NUMBER OF STEPS        0
+Info: STEPS PER CYCLE        10
+Info: PERIODIC CELL BASIS 1  27.968 0 0
+Info: PERIODIC CELL BASIS 2  0 38.136 0
+Info: PERIODIC CELL BASIS 3  0 0 28.101
+Info: PERIODIC CELL CENTER   -0.981 -0.642 0.5875
+Info: WRAPPING WATERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: WRAPPING ALL CLUSTERS AROUND PERIODIC BOUNDARIES ON OUTPUT.
+Info: LOAD BALANCER  Centralized
+Info: LOAD BALANCING STRATEGY  New Load Balancers -- DEFAULT
+Info: LDB PERIOD             2000 steps
+Info: FIRST LDB TIMESTEP     50
+Info: LAST LDB TIMESTEP     -1
+Info: LDB BACKGROUND SCALING 1
+Info: HOM BACKGROUND SCALING 1
+Info: PME BACKGROUND SCALING 1
+Info: MIN ATOMS PER PATCH    40
+Info: INITIAL TEMPERATURE    0
+Info: CENTER OF MASS MOVING INITIALLY? NO
+Info: DIELECTRIC             1
+Info: EXCLUDE                SCALED ONE-FOUR
+Info: 1-4 ELECTROSTATICS SCALED BY 0.5
+Info: MODIFIED 1-4 VDW PARAMETERS WILL BE USED
+Info: DCD FILENAME           minMD-np.dcd
+Info: DCD FREQUENCY          500
+Info: DCD FIRST STEP         500
+Info: DCD FILE WILL CONTAIN UNIT CELL DATA
+Info: XST FILENAME           minMD-np.xst
+Info: XST FREQUENCY          500
+Info: NO VELOCITY DCD OUTPUT
+Info: NO FORCE DCD OUTPUT
+Info: OUTPUT FILENAME        minMD-np
+Info: BINARY OUTPUT FILES WILL BE USED
+Info: RESTART FILENAME       minMD-np.restart
+Info: RESTART FREQUENCY      500
+Info: BINARY RESTART FILES WILL BE USED
+Info: SWITCHING ACTIVE
+Info: SWITCHING ON           12
+Info: SWITCHING OFF          14
+Info: PAIRLIST DISTANCE      16
+Info: PAIRLIST SHRINK RATE   0.01
+Info: PAIRLIST GROW RATE     0.01
+Info: PAIRLIST TRIGGER       0.3
+Info: PAIRLISTS PER CYCLE    2
+Info: PAIRLISTS ENABLED
+Info: MARGIN                 0
+Info: HYDROGEN GROUP CUTOFF  2.5
+Info: PATCH DIMENSION        18.5
+Info: ENERGY OUTPUT STEPS    100
+Info: CROSSTERM ENERGY INCLUDED IN DIHEDRAL
+Info: TIMING OUTPUT STEPS    500
+Info: PRESSURE OUTPUT STEPS  100
+Info: FIXED ATOMS ACTIVE
+Warning: FOR CUDA VERSION PRESSURE WILL BE INCORRECT WITHOUT FIXEDATOMSFORCES
+Info: INTERACTIVE MD ACTIVE
+Info: INTERACTIVE MD PORT    3000
+Info: INTERACTIVE MD FREQ    1
+Info: LANGEVIN DYNAMICS ACTIVE
+Info: LANGEVIN TEMPERATURE   0
+Info: LANGEVIN DAMPING COEFFICIENT IS 5 INVERSE PS
+Info: LANGEVIN DYNAMICS NOT APPLIED TO HYDROGENS
+Info: PARTICLE MESH EWALD (PME) ACTIVE
+Info: PME TOLERANCE               1e-06
+Info: PME EWALD COEFFICIENT       0.219398
+Info: PME INTERPOLATION ORDER     4
+Info: PME GRID DIMENSIONS         28 40 32
+Info: PME MAXIMUM GRID SPACING    1
+Info: Attempting to read FFTW data from FFTW_NAMD_2.8b3_Linux-x86_64-CUDA.txt
+Info: Optimizing 6 FFT steps.  1... 2... 3... 4... 5... 6...   Done.
+Info: Writing FFTW data to FFTW_NAMD_2.8b3_Linux-x86_64-CUDA.txt
+Info: FULL ELECTROSTATIC EVALUATION FREQUENCY      2
+Info: USING VERLET I (r-RESPA) MTS SCHEME.
+Info: C1 SPLITTING OF LONG RANGE ELECTROSTATICS
+Info: PLACING ATOMS IN PATCHES BY HYDROGEN GROUPS
+Info: RIGID BONDS TO HYDROGEN : ALL
+Info:         ERROR TOLERANCE : 1e-08
+Info:          MAX ITERATIONS : 100
+Info: RIGID WATER USING SETTLE ALGORITHM
+Info: RANDOM NUMBER SEED     1358984800
+Info: USE HYDROGEN BONDS?    NO
+Info: COORDINATE PDB         pep5_ionized.pdb
+Info: STRUCTURE FILE         pep5_ionized.psf
+Info: PARAMETER file: CHARMM format! 
+Info: PARAMETERS             /home/lammps/Programas/CHARMM_top/par_all27_prot_lipid.prm
+Info: USING ARITHMETIC MEAN TO COMBINE L-J SIGMA PARAMETERS
+Info: BINARY COORDINATES     min-np.coor
+Info: SUMMARY OF PARAMETERS:
+Info: 180 BONDS
+Info: 447 ANGLES
+Info: 566 DIHEDRAL
+Info: 46 IMPROPER
+Info: 6 CROSSTERM
+Info: 119 VDW
+Info: 0 VDW_PAIRS
+Info: 0 NBTHOLE_PAIRS
+Info: TIME FOR READING PSF FILE: 0.012517
+Info: TIME FOR READING PDB FILE: 0.00403118
+Info: 
+Info: Reading from binary file min-np.coor
+Info: ****************************
+Info: STRUCTURE SUMMARY:
+Info: 2739 ATOMS
+Info: 1848 BONDS
+Info: 1006 ANGLES
+Info: 158 DIHEDRALS
+Info: 15 IMPROPERS
+Info: 3 CROSSTERMS
+Info: 0 EXCLUSIONS
+Info: 66 FIXED ATOMS
+Info: 2704 RIGID BONDS
+Info: 31 RIGID BONDS BETWEEN FIXED ATOMS
+Info: 5346 DEGREES OF FREEDOM
+Info: 926 HYDROGEN GROUPS
+Info: 4 ATOMS IN LARGEST HYDROGEN GROUP
+Info: 926 MIGRATION GROUPS
+Info: 4 ATOMS IN LARGEST MIGRATION GROUP
+Info: 35 HYDROGEN GROUPS WITH ALL ATOMS FIXED
+Info: TOTAL MASS = 16569.3 amu
+Info: TOTAL CHARGE = 1.11759e-08 e
+Info: MASS DENSITY = 0.918004 g/cm^3
+Info: ATOM DENSITY = 0.0913847 atoms/A^3
+Info: *****************************
+Info: 
+Info: Entering startup at 0.327259 s, 3.42928 MB of memory in use
+Info: Startup phase 0 took 0.000527859 s, 3.42686 MB of memory in use
+Info: Startup phase 1 took 0.0235322 s, 3.84779 MB of memory in use
+Info: Startup phase 2 took 0.000124931 s, 3.90202 MB of memory in use
+Info: Startup phase 3 took 0.0207429 s, 3.90019 MB of memory in use
+Info: PATCH GRID IS 3 (PERIODIC) BY 2 (PERIODIC) BY 1 (PERIODIC)
+Info: PATCH GRID IS 2-AWAY BY 1-AWAY BY 1-AWAY
+Info: REMOVING COM VELOCITY 0 0 0
+Info: LARGEST PATCH (4) HAS 478 ATOMS
+Info: Startup phase 4 took 0.00103712 s, 4.35414 MB of memory in use
+Info: PME using 4 and 4 processors for FFT and reciprocal sum.
+Info: PME GRID LOCATIONS: 0 1 2 3
+Info: PME TRANS LOCATIONS: 0 1 2 3
+Info: Optimizing 4 FFT steps.  1... 2... 3... 4...   Done.
+Info: Startup phase 5 took 0.000313997 s, 4.44185 MB of memory in use
+Info: Startup phase 6 took 0.000277996 s, 4.14119 MB of memory in use
+LDB: Central LB being created...
+Info: Startup phase 7 took 1.19802 s, 4.15633 MB of memory in use
+Info: CREATING 210 COMPUTE OBJECTS
+Info: useSync: 1 useProxySync: 0
+Info: NONBONDED TABLE R-SQUARED SPACING: 0.0625
+Info: NONBONDED TABLE SIZE: 769 POINTS
+Info: ABSOLUTE IMPRECISION IN VDWB TABLE ENERGY: 8.27181e-25 AT 14.2105
+Info: RELATIVE IMPRECISION IN VDWB TABLE ENERGY: 9.11006e-17 AT 14.2105
+Info: Updated CUDA LJ table with 119 x 119 elements.
+Info: Updated CUDA force table with 4096 elements.
+Info: Interactive MD listening on port 3000.
+Info: Found 4 unique exclusion lists needing 4 bytes
+Info: Startup phase 8 took 0.0056231 s, 5.24095 MB of memory in use
+Info: Startup phase 9 took 6.69956e-05 s, 5.61961 MB of memory in use
+Info: Finished startup at 1.57753 s, 5.61961 MB of memory in use
+
+TCL: Running for 150 steps
+PRESSURE: 0 -1173.73 211.745 55.4256 215.973 -1381.77 21.0997 68.2486 -4.57855 -1321.43
+GPRESSURE: 0 -1146.37 204.094 71.8397 213.091 -1361.51 9.49867 57.7751 11.2531 -1288.05
+ETITLE:      TS           BOND          ANGLE          DIHED          IMPRP               ELECT            VDW       BOUNDARY           MISC        KINETIC               TOTAL           TEMP      POTENTIAL         TOTAL3        TEMPAVG            PRESSURE      GPRESSURE         VOLUME       PRESSAVG      GPRESSAVG
+
+ENERGY:       0         0.0000         0.0000         0.0000         0.0000         -12817.2125      1713.1810         0.0000         0.0000         0.0000         -11104.0315         0.0000    -11104.0315    -11104.0254         0.0000          -1292.3095     -1265.3083     29972.1795     -1292.3095     -1265.3083
+
+OPENING EXTENDED SYSTEM TRAJECTORY FILE
+The last position output (seq=1) takes 0.000 seconds, 6.854 MB of memory in use
+The last position output (seq=2) takes 0.000 seconds, 6.570 MB of memory in use
+The last position output (seq=3) takes 0.000 seconds, 6.847 MB of memory in use
+The last position output (seq=4) takes 0.000 seconds, 6.585 MB of memory in use
+The last position output (seq=5) takes 0.000 seconds, 6.865 MB of memory in use
+The last position output (seq=6) takes 0.000 seconds, 6.657 MB of memory in use
+The last position output (seq=7) takes 0.000 seconds, 6.634 MB of memory in use
+The last position output (seq=8) takes 0.000 seconds, 6.628 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 1.71619
+The last position output (seq=9) takes 0.000 seconds, 6.578 MB of memory in use
+LDB: ============== END OF LOAD BALANCING =============== 1.71638
+LDB: =============== DONE WITH MIGRATION ================ 1.71694
+The last position output (seq=10) takes 0.000 seconds, 6.630 MB of memory in use
+The last position output (seq=11) takes 0.000 seconds, 6.664 MB of memory in use
+The last position output (seq=12) takes 0.000 seconds, 6.643 MB of memory in use
+The last position output (seq=13) takes 0.000 seconds, 6.620 MB of memory in use
+The last position output (seq=14) takes 0.000 seconds, 6.630 MB of memory in use
+The last position output (seq=15) takes 0.000 seconds, 6.678 MB of memory in use
+The last position output (seq=16) takes 0.000 seconds, 6.657 MB of memory in use
+The last position output (seq=17) takes 0.000 seconds, 6.871 MB of memory in use
+The last position output (seq=18) takes 0.000 seconds, 6.628 MB of memory in use
+The last position output (seq=19) takes 0.000 seconds, 6.564 MB of memory in use
+The last position output (seq=20) takes 0.000 seconds, 6.645 MB of memory in use
+The last position output (seq=21) takes 0.000 seconds, 6.634 MB of memory in use
+The last position output (seq=22) takes 0.000 seconds, 6.601 MB of memory in use
+The last position output (seq=23) takes 0.000 seconds, 6.633 MB of memory in use
+The last position output (seq=24) takes 0.000 seconds, 6.643 MB of memory in use
+The last position output (seq=25) takes 0.000 seconds, 6.867 MB of memory in use
+The last position output (seq=26) takes 0.000 seconds, 6.600 MB of memory in use
+The last position output (seq=27) takes 0.000 seconds, 6.887 MB of memory in use
+The last position output (seq=28) takes 0.000 seconds, 6.615 MB of memory in use
+The last position output (seq=29) takes 0.000 seconds, 6.586 MB of memory in use
+The last position output (seq=30) takes 0.000 seconds, 6.616 MB of memory in use
+The last position output (seq=31) takes 0.000 seconds, 6.871 MB of memory in use
+The last position output (seq=32) takes 0.000 seconds, 6.600 MB of memory in use
+The last position output (seq=33) takes 0.000 seconds, 6.846 MB of memory in use
+The last position output (seq=34) takes 0.000 seconds, 6.629 MB of memory in use
+The last position output (seq=35) takes 0.000 seconds, 6.640 MB of memory in use
+The last position output (seq=36) takes 0.000 seconds, 6.643 MB of memory in use
+The last position output (seq=37) takes 0.000 seconds, 6.866 MB of memory in use
+The last position output (seq=38) takes 0.000 seconds, 6.657 MB of memory in use
+The last position output (seq=39) takes 0.000 seconds, 6.564 MB of memory in use
+The last position output (seq=40) takes 0.000 seconds, 6.630 MB of memory in use
+The last position output (seq=41) takes 0.000 seconds, 6.659 MB of memory in use
+The last position output (seq=42) takes 0.000 seconds, 6.643 MB of memory in use
+The last position output (seq=43) takes 0.000 seconds, 6.619 MB of memory in use
+The last position output (seq=44) takes 0.000 seconds, 6.643 MB of memory in use
+The last position output (seq=45) takes 0.000 seconds, 6.664 MB of memory in use
+The last position output (seq=46) takes 0.000 seconds, 6.659 MB of memory in use
+The last position output (seq=47) takes 0.000 seconds, 6.627 MB of memory in use
+The last position output (seq=48) takes 0.000 seconds, 6.630 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 2.15088
+The last position output (seq=49) takes 0.000 seconds, 6.573 MB of memory in use
+LDB: Largest compute 16 load 0.001482 is 2.5% of average load 0.059552
+LDB: Average compute 0.000606 is 1.0% of average load 0.059552
+LDB: Partitioning computes with target load 0.005955
+LDB: Increased migratable compute count from 36 to 36
+LDB: Largest unpartitionable compute is 0.001482
+LDB: ============== END OF LOAD BALANCING =============== 2.15174
+LDB: =============== DONE WITH MIGRATION ================ 2.15246
+Info: Initial time: 4 CPUs 0.0108471 s/step 0.125546 days/ns 6.64421 MB memory
+The last position output (seq=50) takes 0.000 seconds, 6.644 MB of memory in use
+The last position output (seq=51) takes 0.000 seconds, 6.678 MB of memory in use
+The last position output (seq=52) takes 0.000 seconds, 6.672 MB of memory in use
+The last position output (seq=53) takes 0.000 seconds, 6.915 MB of memory in use
+The last position output (seq=54) takes 0.000 seconds, 6.644 MB of memory in use
+The last position output (seq=55) takes 0.000 seconds, 6.895 MB of memory in use
+The last position output (seq=56) takes 0.000 seconds, 6.673 MB of memory in use
+The last position output (seq=57) takes 0.000 seconds, 6.917 MB of memory in use
+The last position output (seq=58) takes 0.000 seconds, 6.657 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 2.26214
+The last position output (seq=59) takes 0.000 seconds, 6.607 MB of memory in use
+LDB: ============== END OF LOAD BALANCING =============== 2.26232
+LDB: =============== DONE WITH MIGRATION ================ 2.26288
+The last position output (seq=60) takes 0.000 seconds, 6.659 MB of memory in use
+The last position output (seq=61) takes 0.000 seconds, 6.912 MB of memory in use
+The last position output (seq=62) takes 0.000 seconds, 6.629 MB of memory in use
+The last position output (seq=63) takes 0.000 seconds, 6.895 MB of memory in use
+The last position output (seq=64) takes 0.000 seconds, 6.600 MB of memory in use
+The last position output (seq=65) takes 0.000 seconds, 6.649 MB of memory in use
+The last position output (seq=66) takes 0.000 seconds, 6.657 MB of memory in use
+The last position output (seq=67) takes 0.000 seconds, 6.929 MB of memory in use
+The last position output (seq=68) takes 0.000 seconds, 6.658 MB of memory in use
+The last position output (seq=69) takes 0.000 seconds, 6.622 MB of memory in use
+The last position output (seq=70) takes 0.000 seconds, 6.616 MB of memory in use
+The last position output (seq=71) takes 0.000 seconds, 6.914 MB of memory in use
+The last position output (seq=72) takes 0.000 seconds, 6.658 MB of memory in use
+The last position output (seq=73) takes 0.000 seconds, 6.929 MB of memory in use
+The last position output (seq=74) takes 0.000 seconds, 6.686 MB of memory in use
+The last position output (seq=75) takes 0.000 seconds, 6.677 MB of memory in use
+The last position output (seq=76) takes 0.000 seconds, 6.658 MB of memory in use
+The last position output (seq=77) takes 0.000 seconds, 6.678 MB of memory in use
+The last position output (seq=78) takes 0.000 seconds, 6.615 MB of memory in use
+The last position output (seq=79) takes 0.000 seconds, 6.618 MB of memory in use
+The last position output (seq=80) takes 0.000 seconds, 6.688 MB of memory in use
+The last position output (seq=81) takes 0.000 seconds, 6.717 MB of memory in use
+The last position output (seq=82) takes 0.000 seconds, 6.701 MB of memory in use
+The last position output (seq=83) takes 0.000 seconds, 6.663 MB of memory in use
+The last position output (seq=84) takes 0.000 seconds, 6.673 MB of memory in use
+The last position output (seq=85) takes 0.000 seconds, 6.690 MB of memory in use
+The last position output (seq=86) takes 0.000 seconds, 6.700 MB of memory in use
+The last position output (seq=87) takes 0.000 seconds, 6.693 MB of memory in use
+The last position output (seq=88) takes 0.000 seconds, 6.730 MB of memory in use
+The last position output (seq=89) takes 0.000 seconds, 6.621 MB of memory in use
+The last position output (seq=90) takes 0.000 seconds, 6.659 MB of memory in use
+The last position output (seq=91) takes 0.000 seconds, 6.923 MB of memory in use
+The last position output (seq=92) takes 0.000 seconds, 6.687 MB of memory in use
+The last position output (seq=93) takes 0.000 seconds, 6.944 MB of memory in use
+The last position output (seq=94) takes 0.000 seconds, 6.715 MB of memory in use
+The last position output (seq=95) takes 0.000 seconds, 6.736 MB of memory in use
+The last position output (seq=96) takes 0.000 seconds, 6.729 MB of memory in use
+The last position output (seq=97) takes 0.000 seconds, 6.707 MB of memory in use
+The last position output (seq=98) takes 0.000 seconds, 6.686 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 2.69671
+The last position output (seq=99) takes 0.000 seconds, 6.676 MB of memory in use
+LDB: Largest compute 19 load 0.001415 is 2.4% of average load 0.059784
+LDB: Average compute 0.000600 is 1.0% of average load 0.059784
+LDB: TIME 2.69699 LOAD: AVG 0.0597841 MAX 0.0739563  PROXIES: TOTAL 12 MAXPE 4 MAXPATCH 2 None MEM: 6.67033 MB
+LDB: TIME 2.69705 LOAD: AVG 0.0597841 MAX 0.0669501  PROXIES: TOTAL 12 MAXPE 4 MAXPATCH 2 TorusLB MEM: 6.67229 MB
+LDB: ============== END OF LOAD BALANCING =============== 2.69792
+LDB: =============== DONE WITH MIGRATION ================ 2.69865
+PRESSURE: 100 -2609.22 196.105 36.5997 165.796 -2816.87 32.6452 24.6757 -11.524 -2818.68
+GPRESSURE: 100 -2576.67 192.829 41.5583 171.487 -2785.35 28.4655 20.9452 -18.64 -2791.6
+PRESSAVG: 100 -1862.59 199.746 25.3906 200.307 -2076.51 22.7361 25.1568 -16.5974 -2035.58
+GPRESSAVG: 100 -1859.8 200.615 23.5957 200.068 -2074.09 21.1651 26.3051 -16.9509 -2033.12
+Info: Initial time: 4 CPUs 0.0110567 s/step 0.127971 days/ns 6.54805 MB memory
+ENERGY:     100         0.0000         0.0000         0.0000         0.0000         -12673.6998      1550.8059         0.0000         0.0000        12.5423         -11110.3516         2.3612    -11122.8940    -11110.3401         1.6753          -2748.2555     -2717.8719     29972.1795     -1991.5615     -1989.0016
+
+The last position output (seq=100) takes 0.000 seconds, 6.563 MB of memory in use
+The last position output (seq=101) takes 0.000 seconds, 6.775 MB of memory in use
+The last position output (seq=102) takes 0.000 seconds, 6.517 MB of memory in use
+The last position output (seq=103) takes 0.000 seconds, 6.803 MB of memory in use
+The last position output (seq=104) takes 0.000 seconds, 6.474 MB of memory in use
+The last position output (seq=105) takes 0.000 seconds, 6.788 MB of memory in use
+The last position output (seq=106) takes 0.000 seconds, 6.475 MB of memory in use
+The last position output (seq=107) takes 0.000 seconds, 6.788 MB of memory in use
+The last position output (seq=108) takes 0.000 seconds, 6.474 MB of memory in use
+The last position output (seq=109) takes 0.000 seconds, 6.490 MB of memory in use
+The last position output (seq=110) takes 0.000 seconds, 6.534 MB of memory in use
+The last position output (seq=111) takes 0.000 seconds, 6.767 MB of memory in use
+The last position output (seq=112) takes 0.000 seconds, 6.518 MB of memory in use
+The last position output (seq=113) takes 0.000 seconds, 6.531 MB of memory in use
+The last position output (seq=114) takes 0.000 seconds, 6.533 MB of memory in use
+The last position output (seq=115) takes 0.000 seconds, 6.553 MB of memory in use
+The last position output (seq=116) takes 0.000 seconds, 6.518 MB of memory in use
+The last position output (seq=117) takes 0.000 seconds, 6.739 MB of memory in use
+The last position output (seq=118) takes 0.000 seconds, 6.503 MB of memory in use
+The last position output (seq=119) takes 0.000 seconds, 6.508 MB of memory in use
+The last position output (seq=120) takes 0.000 seconds, 6.505 MB of memory in use
+The last position output (seq=121) takes 0.000 seconds, 6.742 MB of memory in use
+The last position output (seq=122) takes 0.000 seconds, 6.533 MB of memory in use
+The last position output (seq=123) takes 0.000 seconds, 6.553 MB of memory in use
+The last position output (seq=124) takes 0.000 seconds, 6.518 MB of memory in use
+The last position output (seq=125) takes 0.000 seconds, 6.509 MB of memory in use
+The last position output (seq=126) takes 0.000 seconds, 6.547 MB of memory in use
+The last position output (seq=127) takes 0.000 seconds, 6.560 MB of memory in use
+The last position output (seq=128) takes 0.000 seconds, 6.547 MB of memory in use
+The last position output (seq=129) takes 0.000 seconds, 6.482 MB of memory in use
+The last position output (seq=130) takes 0.000 seconds, 6.505 MB of memory in use
+The last position output (seq=131) takes 0.000 seconds, 6.775 MB of memory in use
+The last position output (seq=132) takes 0.000 seconds, 6.534 MB of memory in use
+The last position output (seq=133) takes 0.000 seconds, 6.524 MB of memory in use
+The last position output (seq=134) takes 0.000 seconds, 6.520 MB of memory in use
+The last position output (seq=135) takes 0.000 seconds, 6.554 MB of memory in use
+The last position output (seq=136) takes 0.000 seconds, 6.547 MB of memory in use
+The last position output (seq=137) takes 0.000 seconds, 6.790 MB of memory in use
+The last position output (seq=138) takes 0.000 seconds, 6.476 MB of memory in use
+The last position output (seq=139) takes 0.000 seconds, 6.491 MB of memory in use
+The last position output (seq=140) takes 0.000 seconds, 6.535 MB of memory in use
+The last position output (seq=141) takes 0.000 seconds, 6.770 MB of memory in use
+The last position output (seq=142) takes 0.000 seconds, 6.491 MB of memory in use
+The last position output (seq=143) takes 0.000 seconds, 6.539 MB of memory in use
+The last position output (seq=144) takes 0.000 seconds, 6.520 MB of memory in use
+The last position output (seq=145) takes 0.000 seconds, 6.537 MB of memory in use
+The last position output (seq=146) takes 0.000 seconds, 6.547 MB of memory in use
+The last position output (seq=147) takes 0.000 seconds, 6.540 MB of memory in use
+The last position output (seq=148) takes 0.000 seconds, 6.577 MB of memory in use
+LDB: ============= START OF LOAD BALANCING ============== 3.25267
+The last position output (seq=149) takes 0.000 seconds, 6.508 MB of memory in use
+LDB: Largest compute 20 load 0.001740 is 2.0% of average load 0.088236
+LDB: Average compute 0.000743 is 0.8% of average load 0.088236
+LDB: TIME 3.25295 LOAD: AVG 0.0882362 MAX 0.100274  PROXIES: TOTAL 12 MAXPE 4 MAXPATCH 2 None MEM: 6.50307 MB
+LDB: TIME 3.25298 LOAD: AVG 0.0882362 MAX 0.100274  PROXIES: TOTAL 12 MAXPE 4 MAXPATCH 2 RefineTorusLB MEM: 6.50414 MB
+LDB: TIME 3.25302 LOAD: AVG 0.0882362 MAX 0.0998192  PROXIES: TOTAL 12 MAXPE 4 MAXPATCH 2 RefineTorusLB MEM: 6.50414 MB
+LDB: ============== END OF LOAD BALANCING =============== 3.25388
+LDB: =============== DONE WITH MIGRATION ================ 3.25456
+Info: Initial time: 4 CPUs 0.0108916 s/step 0.126061 days/ns 6.51616 MB memory
+The last position output (seq=150) takes 0.000 seconds, 6.517 MB of memory in use
+WRITING EXTENDED SYSTEM TO OUTPUT FILE AT STEP 150
+CLOSING EXTENDED SYSTEM TRAJECTORY FILE
+WRITING COORDINATES TO OUTPUT FILE AT STEP 150
+COORDINATE DCD FILE WAS NOT CREATED
+The last position output (seq=-2) takes 0.000 seconds, 6.470 MB of memory in use
+WRITING VELOCITIES TO OUTPUT FILE AT STEP 150
+The last velocity output (seq=-2) takes 0.000 seconds, 6.446 MB of memory in use
+====================================================
+
+WallClock: 3.268509  CPUTime: 3.020188  Memory: 6.445480 MB
