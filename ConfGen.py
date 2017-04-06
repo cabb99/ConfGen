@@ -11,39 +11,17 @@ import os,sys,getopt, errno, subprocess
 #Caracteristicas del sistema (Modificar aca)
 def soul(user):
 	global My_Charmm, My_Namd
-	#Usuario predeterminado
-	user = "eduardo" if user == None else user 
+	#Default user
+	user = "eduardo" if user == None else user
+	#Definir usuario. 
 	#Comandos de los usuarios
-	if user == "Carlos":
-		My_Charmm="/home/lammps/Programas/CHARMM_top"
-		My_Namd="/usr/local/bin/charmrun ++local +p4 /usr/local/bin/namd2 +idlepoll +devices 1,2"
-	elif user == "Mirko":
-		My_Charmm="/home/mirko/Sebastian/CHARMM/toppar"
-		My_Namd="/home/mirko/NAMD/charmrun +p4 /home/mirko/NAMD/namd2 +idlepoll +devices 1,2"
-	elif user == "Hugo":
-		My_Charmm="/home/lammps/Programas/CHARMM_top"
-		My_Namd="/usr/local/bin/charmrun +p4 /usr/local/bin/namd2 +idlepoll"
-	elif user == "cuda":
-		My_Charmm="/home/cuda/Programas/CHARMM_top"
-		My_Namd="/home/cuda/Programas/NAMD/charmrun +p4 /home/cuda/Programas/NAMD/namd2 +idlepoll +devices 0,1"
-	elif user == "cuda2":
-		My_Charmm="/home/cuda2/Programas/CHARMM_top"
-		My_Namd="/home/cuda2/Programas/NAMD/charmrun +p4 /home/cuda2/Programas/NAMD/namd2 +idlepoll +devices 0,1"
-	elif user == "cuda3":
-		My_Charmm="/home/cuda3/Programas/CHARMM_top"
-		My_Namd="/home/cuda3/Programas/NAMD/charmrun +p4 /home/cuda3/Programas/NAMD/namd2 +idlepoll +devices 0,1"
-	elif user == "any":
-		My_Charmm="$$Charm_path"
-		My_Namd="$$Namd_cmd"
-	elif user == "eduardo":
-		My_Charmm="/home/eduardo/Programas/NAMD/toppar"
-		My_Namd="/home/eduardo/Programas/NAMD/charmrun +p2 /home/eduardo/Programas/NAMD/namd2 +idlepoll +devices 0,1"
-	elif user == "brad":
-		My_Charmm="/home/brad/Programas/NAMD_2.9_Linux-x86_64-multicore-CUDA/toppar"
-		My_Namd="/usr/local/bin/charmrun +p4 /usr/local/bin/namd2 +idlepoll +devices 0,1"
-	elif user == "pitts":
-		My_Charmm="/home/pitts/Documents/NAMD_CVS-2016-05-02_Linux-x86_64-multicore-CUDA/toppar"
-		My_Namd="/home/pitts/Documents/NAMD_CVS-2016-05-02_Linux-x86_64-multicore-CUDA/charmrun +p2 /home/pitts/Documents/NAMD_CVS-2016-05-02_Linux-x86_64-multicore-CUDA/namd2 +idlepoll +devices 0"
+
+	if user == "Carlos": #Example. Cuda User.
+		My_Charmm="/home/lammps/Programas/CHARMM_top" #This file contains FF files.
+		My_Namd="/usr/local/bin/charmrun ++local +p4 /usr/local/bin/namd2 +idlepoll +devices 1,2" #/usr/local/bin is the location where Namd is installed. +p4 indicates number of proccesor used. +devides 1,2 indicates the CUDA  
+	elif user == "Mirko": #Example
+		My_Charmm="/home/mirko/Sebastian/CHARMM/toppar" #Example. No Cuda user
+		My_Namd="/usr/local/bin/namd2 + p8" #Example
 	else:
 		print "El usuario no esta registrado, registrelo en el modulo soul"
 		print user
@@ -90,7 +68,7 @@ def get_path():
 		PAT = PAT + "/"
 	return PAT
 
-#Encontrar donde estoy
+#Get path
 def get_pos():
 	os.system('pwd>path.log')
 	a=open('path.log')
